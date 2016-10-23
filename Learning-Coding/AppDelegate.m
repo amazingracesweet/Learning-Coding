@@ -16,10 +16,39 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor redColor];
+    
+    //导航条与状态栏
+//    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+//    [UIViewController prefersStatusBarHidden];
+    
+    float sysVer = [[[UIDevice currentDevice] systemVersion] floatValue];
+    if (sysVer >= 8.0)
+    {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
+        //UNAuthorizationOptions
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        
+    }
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+
+    
+    self.window.rootViewController = [[UIViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
+-(void)registerPush
+{
+    float sysVer = [[[UIDevice currentDevice] systemVersion] floatValue];
+    if (sysVer < 8)
+    {
+//        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:()];
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
