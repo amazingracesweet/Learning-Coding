@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootTabViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +19,30 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor redColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     
     //导航条与状态栏
 //    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
 //    [UIViewController prefersStatusBarHidden];
+
+    [self setupTabViewController];
     
+//    self.window.rootViewController = [[UIViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    
+    return YES;
+}
+
+- (void)setupTabViewController{
+    RootTabViewController *rootVC = [[RootTabViewController alloc] init];
+    rootVC.tabBar.translucent = YES;
+    
+    [self.window setRootViewController:rootVC];
+}
+
+
+-(void)registerPush
+{
     float sysVer = [[[UIDevice currentDevice] systemVersion] floatValue];
     if (sysVer >= 8.0)
     {
@@ -32,22 +51,10 @@
         [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
         
     }
+    
+    // 通知badge数字
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 
-    
-    self.window.rootViewController = [[UIViewController alloc] init];
-    [self.window makeKeyAndVisible];
-    
-    return YES;
-}
-
--(void)registerPush
-{
-    float sysVer = [[[UIDevice currentDevice] systemVersion] floatValue];
-    if (sysVer < 8)
-    {
-//        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:()];
-    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

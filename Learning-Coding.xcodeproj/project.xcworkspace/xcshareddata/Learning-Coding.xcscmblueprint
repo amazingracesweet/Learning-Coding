@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "86F8FCA894D075F84FCD93323C68F8A90A4395EB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "315dd4fa-e307-714e-ba45-82b193b6029e" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "86F8FCA894D075F84FCD93323C68F8A90A4395EB" : 9223372036854775807,
+    "315dd4fa-e307-714e-ba45-82b193b6029e" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "880654C2-B09D-4151-AA08-29F9EBE936D4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "86F8FCA894D075F84FCD93323C68F8A90A4395EB" : "Learning-Coding\/",
+    "315dd4fa-e307-714e-ba45-82b193b6029e" : "..\/..\/..\/work\/App_ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Learning-Coding",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Learning-Coding.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/10.120.99.32\/svn\/App_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "315dd4fa-e307-714e-ba45-82b193b6029e"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amazingracesweet\/Learning-Coding.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "86F8FCA894D075F84FCD93323C68F8A90A4395EB"
+    }
+  ]
+}

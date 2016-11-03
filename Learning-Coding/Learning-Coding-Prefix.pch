@@ -1,0 +1,39 @@
+//
+//  Learning-Coding-Prefix.pch
+//  Learning-Coding
+//
+//  Created by 肖许 on 2016/11/3.
+//  Copyright © 2016年 xiaoxu. All rights reserved.
+//
+
+#ifndef Learning_Coding_Prefix_pch
+#define Learning_Coding_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIImage+Common.h"
+#import "UIView+Common.h"
+#import "UIColor+expanded.h"
+
+
+#define kColorNavBG [UIColor colorWithHexString:@"0xF8F8F8"]
+#define kColorCCC [UIColor colorWithHexString:@"0xCCCCCC"]
+#define kColorDDD [UIColor colorWithHexString:@"0xDDDDDD"]
+#define kColorBrandGreen [UIColor colorWithHexString:@"0x3BBD79"]
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+
+#define kDevice_Is_iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define  kBadgeTipStr @"badgeTip"
+
+#endif /* Learning_Coding_Prefix_pch */
+
+
+
