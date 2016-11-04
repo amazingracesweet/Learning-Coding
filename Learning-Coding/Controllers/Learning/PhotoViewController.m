@@ -10,10 +10,6 @@
 #import "NsMedia.h"
 #import "CategoryMedia.h"
 
-@interface PhotoViewController ()
-
-@end
-
 static NSString *groupName = nil;
 
 @implementation PhotoViewController
@@ -26,6 +22,8 @@ static NSString *groupName = nil;
     self.view.backgroundColor = [UIColor lightGrayColor];
     [self setupSubview];
     [self loadVideoAssets];
+
+    [self performSelector:@selector(getMedia) withObject:nil afterDelay:5];
 }
 
 -(void)setupSubview
@@ -45,6 +43,12 @@ static NSString *groupName = nil;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) getMedia
+{
+    NSLog(@"getMedia");
+    
 }
 
 -(BOOL) loadVideoAssets
@@ -151,17 +155,15 @@ static NSString *groupName = nil;
             
             NSLog(@"group %@",group);
             NSLog(@"groupName %@",groupName);
-//            CategoryMedia *childCatePhoto = [[CategoryMedia alloc] initWithKey:[NSString stringWithFormat:@"ROOT*PHOTO*%@",groupName] withName:groupName withUrl:nil withMediaType:@"PHOTO"];
-//            
-//            childCatePhoto.isDir = YES;
-//            [albumTreeArr addObject:childCatePhoto];
-//            [childCatePhoto release];
-//            
-//            CategoryMedia *childCateVideo = [[CategoryMedia alloc] initWithKey:[NSString stringWithFormat:@"ROOT*VIDEO*%@",groupName] withName:groupName withUrl:nil withMediaType:@"VIDEO"];
-//            
-//            childCateVideo.isDir = YES;
-//            [albumTreeArr addObject:childCateVideo];
-//            [childCateVideo release];
+            CategoryMedia *childCatePhoto = [[CategoryMedia alloc] initWithKey:[NSString stringWithFormat:@"ROOT*PHOTO*%@",groupName] withName:groupName withUrl:nil withMediaType:@"PHOTO"];
+            
+            childCatePhoto.isDir = YES;
+            [albumTreeArr addObject:childCatePhoto];
+            
+            CategoryMedia *childCateVideo = [[CategoryMedia alloc] initWithKey:[NSString stringWithFormat:@"ROOT*VIDEO*%@",groupName] withName:groupName withUrl:nil withMediaType:@"VIDEO"];
+            
+            childCateVideo.isDir = YES;
+            [albumTreeArr addObject:childCateVideo];
             
             [group enumerateAssetsUsingBlock:groupEnumerAtion];
         }

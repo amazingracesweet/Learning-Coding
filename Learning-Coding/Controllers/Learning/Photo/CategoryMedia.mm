@@ -48,7 +48,7 @@
 /**
  * 把一个指令的集合自动增加到各个目录指令下。<br>
  *
- * @param dictateList 指令的集合
+ *
  */
 -( void)addItems: (NSMutableArray *)itemViewArray {
     

@@ -53,7 +53,7 @@
 		48A94AF11DCB4518008DA9FE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A94AF01DCB4518008DA9FE /* AssetsLibrary.framework */; };
 		48A94AF31DCB454D008DA9FE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A94AF21DCB454D008DA9FE /* AVFoundation.framework */; };
 		48A94AF51DCB4569008DA9FE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A94AF41DCB4569008DA9FE /* CoreMedia.framework */; };
-		48A94AF81DCB4688008DA9FE /* RootMedia.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48A94AF71DCB4688008DA9FE /* RootMedia.mm */; };
+		48F260AF1DCC8B4700F90362 /* RootMedia.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48F260AE1DCC8B4700F90362 /* RootMedia.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,8 +145,8 @@
 		48A94AF01DCB4518008DA9FE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		48A94AF21DCB454D008DA9FE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		48A94AF41DCB4569008DA9FE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		48A94AF61DCB4688008DA9FE /* RootMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootMedia.h; path = "../../../../../../../../work/App_ios/trunk/多屏互动/多屏互动5月冲刺版/MultiScreen/com/media/RootMedia.h"; sourceTree = "<group>"; };
-		48A94AF71DCB4688008DA9FE /* RootMedia.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RootMedia.mm; path = "../../../../../../../../work/App_ios/trunk/多屏互动/多屏互动5月冲刺版/MultiScreen/com/media/RootMedia.mm"; sourceTree = "<group>"; };
+		48F260AD1DCC8B4700F90362 /* RootMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootMedia.h; sourceTree = "<group>"; };
+		48F260AE1DCC8B4700F90362 /* RootMedia.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootMedia.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,8 +370,8 @@
 		48A94AE51DCB42D9008DA9FE /* Photo */ = {
 			isa = PBXGroup;
 			children = (
-				48A94AF61DCB4688008DA9FE /* RootMedia.h */,
-				48A94AF71DCB4688008DA9FE /* RootMedia.mm */,
+				48F260AD1DCC8B4700F90362 /* RootMedia.h */,
+				48F260AE1DCC8B4700F90362 /* RootMedia.mm */,
 				48A94AEC1DCB4449008DA9FE /* AbstractMedia.h */,
 				48A94AED1DCB4449008DA9FE /* AbstractMedia.mm */,
 				48A94AE91DCB43E5008DA9FE /* CategoryMedia.h */,
@@ -551,7 +551,7 @@
 				48A94AC61DCB2428008DA9FE /* BaseViewController.m in Sources */,
 				48A94A931DCAE6D4008DA9FE /* RDVTabBarController.m in Sources */,
 				48A94AC91DCB2745008DA9FE /* Project_RootViewController.m in Sources */,
-				48A94AF81DCB4688008DA9FE /* RootMedia.mm in Sources */,
+				48F260AF1DCC8B4700F90362 /* RootMedia.mm in Sources */,
 				48A94ACC1DCB27D0008DA9FE /* BaseNavigationController.m in Sources */,
 				48A94AD91DCB2C4C008DA9FE /* UIView+Frame.m in Sources */,
 				48A94AEB1DCB43E5008DA9FE /* CategoryMedia.mm in Sources */,
